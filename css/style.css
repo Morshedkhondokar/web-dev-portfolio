@@ -160,3 +160,38 @@ main section{
 .section_description{
     margin: 40px 110px;
 }
+
+/* resume section */
+
+.resume_container{
+    display: flex;
+    gap: 24px;
+}
+
+.resume_column_title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.experience_title{
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.experience_sub_tiile{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.experience_description, .experience_sub_tiile{
+    color: #757575;
+}
+
+.resume hr{
+    margin: 30px 5px;
+}
+
+.resume_download_CV{
+    margin-top: 50px;
+}
