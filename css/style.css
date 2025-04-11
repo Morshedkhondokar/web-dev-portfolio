@@ -218,10 +218,7 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     border: none;
 }
 
-.hide{
-    display: none;
-}
-
+/* responsive media query mobile device */
 @media screen and (max-width: 576px) {
     .skills_container,.resume_container, footer, .about_items, .banner, nav, nav > ul{
         flex-direction: column;
@@ -265,5 +262,57 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 
     footer input[type="text"], footer input[type="email"], footer textarea{
         width: calc(100% - 40px);
+    }
+}
+
+/* responsive media query tablet device */
+
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    
+    .header{
+        background-image: none;
+    }
+    
+    .banner{
+        flex-direction: column;
+        margin: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tablet{
+        margin-left: 20px;
+    }
+
+    .nav{
+        margin: 0;
+    }
+
+    .about{
+        padding: 20px;
+    }
+
+    .skills_container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .resume_column_title{
+    text-align: center;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .footer_title{
+        text-align: center;
     }
 }
